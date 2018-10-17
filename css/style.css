@@ -1,0 +1,172 @@
+body {
+	font: 400 13px/1.2 Arial, sans-serif;
+	background: linear-gradient(to left bottom, #db1f76 20%, #e7305c 50%, #f4443b 80%);
+	color: #797b7f;
+
+}
+
+/* Layout */
+.ba-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+a {
+	text-decoration: none;
+	color: #ea355a;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+	background-color: #ea355a;
+	box-shadow: 0px 3px 0px 0px #bd1962;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	padding: 0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+	background-color: rgb(234, 53, 90, 0.7);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	display: inline-block;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	background-color: #f0f0f0;
+	border: none;
+	color: #797b7f;
+	font-size: 14px;
+	font-weight: 400;
+	height: 40px;
+	padding: 5px 7px;
+	border-radius: 4px;
+}
+
+label{
+	display: block;
+	color: #797b7f;	
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.ba-input-anime, .ba-input-anime-big{
+	position: relative;
+}
+
+.ba-input-anime  label{
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	transition: transform 0.2s ease-in;
+	transform-origin: 0 50%;
+}
+.ba-input-anime-big label{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	transition: transform 0.2s ease-in;
+	transform-origin: 0 50%;
+}
+.ba-input-anime :focus ~ label,
+.ba-input-anime :valid ~ label,
+.ba-input-anime-big :focus ~ label,
+.ba-input-anime-big :valid ~ label
+{
+	transform:  translateY(-22px) scale(0.90);
+	color: #bd1962;
+	font-size: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: 2px solid #bd1962;}
+
+textarea {}
+
+main {
+	padding: 64px 0;
+}
+
+.ba-form {
+	max-width: 460px;
+	background: #fff;
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.ba-form-row {
+	margin-bottom: 15px;
+}
+
+.ba-form__main_name  {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.ba-form__name {
+	color: #1b1c1d;
+	font-size: 24px;
+	font-weight: 700;
+
+}
+
+.ba-form__header {
+	padding: 26px 35px 15px;
+}
+
+.ba-form__info{
+	line-height: 1.3;
+}
+
+.ba-form__name {
+	margin-left: 8px;
+}
+
+.ba-form__body {
+	padding: 5px 30px 60px 33px;
+}
+
+.ba-form__body button {
+	margin-bottom: 25px;
+}
+
